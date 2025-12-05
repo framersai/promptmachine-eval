@@ -1,0 +1,62 @@
+name: 💡 Feature Request
+description: Suggest a new feature or improvement
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! Please fill out the form below.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Is your feature request related to a problem? Describe it.
+      placeholder: I'm always frustrated when...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like.
+      placeholder: |
+        It would be great if pm-eval could...
+        
+        Example usage:
+        ```python
+        from promptmachine_eval import NewFeature
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Any alternative solutions or workarounds you've considered.
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      description: What area does this feature relate to?
+      options:
+        - CLI
+        - ELO/Rating System
+        - Arena Battles
+        - Benchmarks
+        - Cost Tracking
+        - API/SDK
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other context, screenshots, or examples.
+
